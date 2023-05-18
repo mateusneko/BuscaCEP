@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/myCSS.css">
+    <script src="./js/CEPsearch.js"></script>
+    <title>Pesquisar CEP</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text">Buscar CEP</div>
+        <form method="GET" action=".">
+           <div class="form-row">
+              <div class="input-data">
+                 <input type="text" name="inputCEP" id="inputCEP" size="10" maxlength="9" onblur="pesquisaCEP()">
+                 <div class="underline"></div>
+                 <label for="">CEP</label>
+              </div>
+              <div class="input-data">
+                 <input type="text" name="rua" id="rua" size="60">
+                 <div class="underline"></div>
+                 <label for="">Endereço</label>
+              </div>
+           </div>
+           <div class="form-row">
+              <div class="input-data">
+                 <input type="text" name="bairro" id="bairro" size="40">
+                 <div class="underline"></div>
+                 <label for="">Bairro</label>
+              </div>
+              <div class="input-data">
+                 <input type="text" name="cidade" id="cidade" size="40">
+                 <div class="underline"></div>
+                 <label for="">Cidade</label>
+              </div>
+           
+           <div class="input-data">
+            <input type="text" name="uf" id="uf" size="2">
+            <div class="underline"></div>
+            <label for="">UF</label>
+         
+      </div>
+                 <br />
+                 <div class="form-row submit-btn">
+                    <div class="input-data">
+                       <div class="inner"></div>
+                       <input type="button" value="Buscar" onclick="pesquisacep()">
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </form>
+     </div>
+     <div id="maps"></div>
+</body>
+</html>
